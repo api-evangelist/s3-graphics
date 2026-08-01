@@ -1,7 +1,26 @@
 aid: s3-graphics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/s3-graphics.png
 name: S3 Graphics
-description: S3 Graphics is a company surfaced as a portfolio company of mayfield and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: S3 Graphics, Inc. is a legacy graphics, video, and multimedia accelerator
+  company known for its GPU architectures (Savage, Chrome and DeltaChrome, plus the
+  earlier ViRGE and Trio chipsets) and its display drivers. Originally founded as S3
+  Incorporated in 1989, the graphics business later operated as S3 Graphics under
+  VIA and HTC ownership. Its public web presence is a legacy marketing and
+  driver-download site (still Flash/Ruffle based); it exposes no modern web API, SDK,
+  or developer platform. The historical "Developers" area was a hardware
+  developer-relations channel offering GPU sample cards during the DeltaChrome era,
+  not a programmatic API.
 url: https://raw.githubusercontent.com/api-evangelist/s3-graphics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +28,31 @@ x-backed-by:
 - mayfield
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-no-api-surface: true
+x-no-api-reason: Legacy GPU/graphics hardware company; live site is a marketing and
+  driver-download page with no web API, SDK, or developer platform.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Graphics
+- GPU
+- Semiconductor
+- Hardware
+- Drivers
+- Legacy
+common:
+- type: DomainSecurity
+  url: security/s3-graphics-domain-security.yml
+- type: Website
+  url: https://www.s3graphics.com
 apis: []
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
